@@ -248,7 +248,7 @@ const money = (value: number) =>
   }).format(value);
 
 // Pricing: every pair costs $30,000.
-// Any remaining single perfume costs $17,000.
+// Any remaining single body mits costs $17,000.
 function calculateTotal(quantity: number): number {
   const pairs = Math.floor(quantity / 2);
   const remainder = quantity % 2;
@@ -406,7 +406,7 @@ export default function Home() {
               </div>
 
               <p className="mt-1 text-[9px] tracking-[0.42em] text-white/60">
-                PERFUMERÍA & ACCESORIOS
+                Body mits
               </p>
             </div>
 
@@ -429,7 +429,7 @@ export default function Home() {
             </p>
 
             <h1 className="font-serif text-4xl leading-tight md:text-6xl">
-              El perfume perfecto
+              El body mits perfecto
               <span className="block italic text-[#d6b77b]">
                 habla por ti.
               </span>
@@ -457,7 +457,7 @@ export default function Home() {
         </p>
 
         <h2 className="mt-2 font-serif text-4xl font-bold tracking-wider md:text-5xl">
-          BLACK WEEK
+          PROMOCION NAVIDAD
         </h2>
 
         <p className="mt-3 text-sm font-medium">
@@ -491,7 +491,7 @@ export default function Home() {
           </p>
 
           <h2 className="mt-3 font-serif text-3xl md:text-4xl">
-            Catálogo de perfumes
+            Catálogo de Body mits
           </h2>
 
           <div className="mx-auto mt-4 h-px w-16 bg-[#b89b65]" />
@@ -613,13 +613,13 @@ export default function Home() {
                     <div className="flex flex-col items-center text-[#b5a98f]">
                       <span className="font-serif text-5xl">SA</span>
                       <span className="mt-2 text-[9px] tracking-[0.3em]">
-                        PERFUMERÍA
+                        Body mits
                       </span>
                     </div>
                   )}
 
                   <span className="absolute left-3 top-3 bg-[#b89b65] px-3 py-1 text-[9px] font-bold tracking-widest text-black">
-                    BLACK WEEK
+                    PROMOCION NAVIDAD
                   </span>
 
                   <span className="absolute bottom-3 right-3 bg-white/90 px-3 py-1 text-[10px] text-gray-600">
@@ -732,7 +732,7 @@ export default function Home() {
         </h2>
 
         <p className="mt-2 text-[9px] tracking-[0.35em] text-white/50">
-          PERFUMERÍA & ACCESORIOS
+          Body mits
         </p>
 
         <div className="mx-auto my-6 h-px w-12 bg-[#b89b65]" />
@@ -799,7 +799,7 @@ export default function Home() {
                   </p>
 
                   <p className="mt-2 text-sm text-gray-500">
-                    Agrega tus perfumes favoritos para continuar.
+                    Agrega tus Body mits favoritos para continuar.
                   </p>
 
                   <button
