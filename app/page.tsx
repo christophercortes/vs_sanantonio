@@ -597,7 +597,7 @@ export default function Home() {
             <div className="flex items-center justify-between border-b border-[#e7dfd0] bg-[#171613] px-6 py-6 text-white">
               <div>
                 <p className="text-[9px] tracking-[0.3em] text-[#d6b77b]">
-                  D’LORENZO
+                  SA San Antonio
                 </p>
                 <h2 className="mt-1 font-serif text-2xl">Mi pedido</h2>
               </div>
