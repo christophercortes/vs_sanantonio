@@ -9,7 +9,6 @@ type Product = {
   gender: string;
   season: string;
   price: number;
-  offerPrice3Units?: number;
   image: string;
   description: string;
 };
@@ -17,47 +16,224 @@ type Product = {
 const PRODUCTS: Product[] = [
   {
     id: "1",
-    product: "SNOW FLOWER EDT 30 ML TESTER",
-    brand: "SWISS ARMY VICTORINOX",
-    gender: "Mujer",
-    season: "Primavera",
-    price: 8900,
-    offerPrice3Units: 6000,
-    image: "",
-    description: "Fragancia fresca y delicada.",
+    product: "GLAZED PETALS & BERRIES",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/1.jpeg",
+    description: "Fragancia fresca, dulce y delicada.",
   },
   {
     id: "2",
-    product: "BUTTER SCOTCH EDP 100 ML",
-    brand: "ADYAN",
-    gender: "Unisex",
-    season: "Invierno",
-    price: 23400,
-    offerPrice3Units: 20700,
-    image: "",
-    description: "Una fragancia dulce y envolvente.",
+    product: "GOLDEN APRICOT & HONEY",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/2.jpeg",
+    description: "Una fragancia dulce, calida y luminosa.",
   },
   {
     id: "3",
-    product: "BELLA NIGHT EDP 100 ML",
-    brand: "OSCAR DE LA RENTA",
-    gender: "Mujer",
-    season: "Noche",
-    price: 35640,
-    offerPrice3Units: 32000,
-    image: "",
-    description: "Elegante fragancia para ocasiones especiales.",
+    product: "ANGEL CAKE & CREAM",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/3.jpeg",
+    description: "Una fragancia gourmand dulce y cremosa.",
   },
   {
     id: "4",
-    product: "BLOOD LILY EDP 100 ML",
-    brand: "ADYAN",
-    gender: "Unisex",
-    season: "Verano",
-    price: 23400,
-    offerPrice3Units: 20700,
-    image: "",
-    description: "Una fragancia intensa y sofisticada.",
+    product: "COCONUT PASSION",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/4.jpeg",
+    description: "La deliciosa combinacion de coco cremoso y vainilla.",
+  },
+  {
+    id: "5",
+    product: "VELVET PETALS",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/5.jpeg",
+    description: "Un aroma suave, dulce y delicadamente floral.",
+  },
+  {
+    id: "6",
+    product: "LOVE SPELL",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/6.jpeg",
+    description: "Una fragancia dulce femenina.",
+  },
+  {
+    id: "7",
+    product: "PURE SEDUCTION",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/7.jpeg",
+    description:
+      "Una fragancia irresistible que combina notas jugosas de ciruela y fresia.",
+  },
+  {
+    id: "8",
+    product: "CHERRY DESIRE",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/8.jpeg",
+    description: "Una fragancia seductora que combina la jugosa cereza.",
+  },
+  {
+    id: "9",
+    product: "BARE VANILLA",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/9.jpeg",
+    description: "Una fragancia que combina la suavidad de la vainilla.",
+  },
+  {
+    id: "10",
+    product: "CASHMERE FLEUR",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/10.jpeg",
+    description: "Una fragancia que combina la suavidad del cashmere.",
+  },
+  {
+    id: "11",
+    product: "AMBER ROMANCE",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/11.jpeg",
+    description: "",
+  },
+  {
+    id: "12",
+    product: "ROMANCTIC",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/12.jpeg",
+    description: "Una fragancia femenina, delicada, envolvente.",
+  },
+  {
+    id: "13",
+    product: "VANILLA LACE",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/13.jpeg",
+    description: "Una fragancia calida, dulce y envolvente.",
+  },
+  {
+    id: "14",
+    product: "AQUA KISS",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/14.jpeg",
+    description: "Una fragancia fresca, ligera, y revitalizante.",
+  },
+  {
+    id: "15",
+    product: "TEMPTATION",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/15.jpeg",
+    description: "Una fragancia dulce, frutal y seductora.",
+  },
+  {
+    id: "16",
+    product: "LUSCIOUS KISSES",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/16.jpeg",
+    description: "Una fragancia femenina y cautivadora.",
+  },
+  {
+    id: "17",
+    product: "SHEER LOVE",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/17.jpeg",
+    description: "Fragancia que combina la suavidad del algodon blanco.",
+  },
+  {
+    id: "18",
+    product: "MANGO TEMPTATION",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/18.jpeg",
+    description: "Una fragancia que combina la jugosidad del mango.",
+  },
+  {
+    id: "19",
+    product: "COCONUT PASSION BRULEE",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/9.jpeg",
+    description: "Una bruma corporal dulce y cremosa.",
+  },
+  {
+    id: "20",
+    product: "PURE SEDUCTION BRULEE",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/20.jpeg",
+    description: "Una bruma corporal dulce y seductora.",
+  },
+  {
+    id: "21",
+    product: "LOVE SPELL BRULEE",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/21.jpeg",
+    description: "Una bruma corporal dulce y envolvente.",
+  },
+  {
+    id: "22",
+    product: "BARE VANILLA BRULEE",
+    brand: "VICTORIA'S SECRET",
+    gender: "mujer",
+    season: "primavera",
+    price: 17000,
+    image: "/22.jpeg",
+    description: "Una bruma corporal calida y envolvente.",
   },
 ];
 
@@ -71,6 +247,15 @@ const money = (value: number) =>
     maximumFractionDigits: 0,
   }).format(value);
 
+// Pricing: every pair costs $30,000.
+// Any remaining single perfume costs $17,000.
+function calculateTotal(quantity: number): number {
+  const pairs = Math.floor(quantity / 2);
+  const remainder = quantity % 2;
+
+  return pairs * 30000 + remainder * 17000;
+}
+
 export default function Home() {
   const [cart, setCart] = useState<Record<string, number>>({});
   const [cartLoaded, setCartLoaded] = useState(false);
@@ -79,6 +264,7 @@ export default function Home() {
   const [brand, setBrand] = useState("all");
   const [gender, setGender] = useState("all");
   const [season, setSeason] = useState("all");
+
   const [cartOpen, setCartOpen] = useState(false);
   const [details, setDetails] = useState<string[]>([]);
 
@@ -86,7 +272,10 @@ export default function Home() {
   useEffect(() => {
     try {
       const saved = localStorage.getItem(CART_KEY);
-      if (saved) setCart(JSON.parse(saved));
+
+      if (saved) {
+        setCart(JSON.parse(saved));
+      }
     } catch {
       setCart({});
     } finally {
@@ -94,19 +283,18 @@ export default function Home() {
     }
   }, []);
 
-  // Save cart only after restoration
+  // Save cart after restoration
   useEffect(() => {
     if (cartLoaded) {
       localStorage.setItem(CART_KEY, JSON.stringify(cart));
     }
   }, [cart, cartLoaded]);
 
+  // Cart calculations
   const totalUnits = Object.values(cart).reduce(
     (sum, qty) => sum + qty,
     0
   );
-
-  const promoActive = totalUnits >= 3;
 
   const lines = PRODUCTS
     .filter((product) => (cart[product.id] ?? 0) > 0)
@@ -115,23 +303,13 @@ export default function Home() {
       qty: cart[product.id],
     }));
 
-  const totalNormal = lines.reduce(
-    (sum, line) => sum + line.product.price * line.qty,
-    0
-  );
-
-  const totalPromo = lines.reduce(
-    (sum, line) =>
-      sum +
-      (promoActive
-        ? line.product.offerPrice3Units ?? line.product.price
-        : line.product.price) *
-      line.qty,
-    0
-  );
-
+  const totalNormal = totalUnits * 17000;
+  const totalPromo = calculateTotal(totalUnits);
   const savings = totalNormal - totalPromo;
 
+  const promoActive = totalUnits >= 2;
+
+  // Filter options
   const brands = useMemo(
     () => [...new Set(PRODUCTS.map((p) => p.brand))].sort(),
     []
@@ -142,6 +320,7 @@ export default function Home() {
     []
   );
 
+  // Product search and filters
   const filteredProducts = PRODUCTS.filter((product) => {
     const term = query.toLowerCase().trim();
 
@@ -155,6 +334,7 @@ export default function Home() {
     );
   });
 
+  // Update product quantity
   function setQuantity(id: string, quantity: number) {
     setCart((previous) => {
       const next = { ...previous };
@@ -170,9 +350,13 @@ export default function Home() {
   }
 
   function addOne(id: string) {
-    setQuantity(id, (cart[id] ?? 0) + 1);
+    setCart((previous) => ({
+      ...previous,
+      [id]: (previous[id] ?? 0) + 1,
+    }));
   }
 
+  // Show or hide product details
   function toggleDetails(id: string) {
     setDetails((previous) =>
       previous.includes(id)
@@ -181,29 +365,23 @@ export default function Home() {
     );
   }
 
+  // WhatsApp checkout
   function sendWhatsAppOrder() {
     if (!lines.length) return;
 
-    const rows = lines.map((line) => {
-      const unitPrice = promoActive
-        ? line.product.offerPrice3Units ?? line.product.price
-        : line.product.price;
-
-      return `${line.qty} x ${line.product.product} (${money(unitPrice)} c/u)`;
-    });
+    const rows = lines.map(
+      (line) => `${line.qty} x ${line.product.product}`
+    );
 
     const message = [
-      "Hola, quiero hacer este pedido:",
+      "Hola, quiero realizar este pedido:",
       "",
       ...rows,
       "",
-      `Total: ${money(totalPromo)}`,
-      ...(promoActive
-        ? [
-          `Total normal: ${money(totalNormal)}`,
-          `Ahorras ${money(savings)} con Promo 3+`,
-        ]
-        : []),
+      `Cantidad de productos: ${totalUnits}`,
+      `Total normal: ${money(totalNormal)}`,
+      `Total con promocion: ${money(totalPromo)}`,
+      `Ahorro: ${money(savings)}`,
     ].join("\n");
 
     window.open(
@@ -226,6 +404,7 @@ export default function Home() {
               <div className="text-2xl font-serif tracking-[0.25em] text-[#d6b77b] md:text-3xl">
                 VS San Antonio
               </div>
+
               <p className="mt-1 text-[9px] tracking-[0.42em] text-white/60">
                 PERFUMERÍA & ACCESORIOS
               </p>
@@ -237,6 +416,7 @@ export default function Home() {
             >
               <span>♧</span>
               <span className="hidden sm:inline">Mi pedido</span>
+
               <span className="flex h-6 min-w-6 items-center justify-center rounded-full bg-[#b89b65] px-1 text-xs font-bold text-black">
                 {totalUnits}
               </span>
@@ -285,12 +465,12 @@ export default function Home() {
         </p>
 
         <p className="mx-auto mt-2 max-w-xl text-sm leading-6 text-black/70">
-          Elige 3 o más perfumes, combina tus favoritos y aprovecha
-          precios especiales en cada uno.
+          Combina tus fragancias favoritas y aprovecha nuestros precios
+          especiales.
         </p>
 
         <div className="mx-auto mt-5 inline-block border border-black/30 px-5 py-2 text-xs font-bold tracking-widest">
-          LLEVA 3 O MÁS Y AHORRA EN CADA UNO
+          1 POR $17.000 · 2 POR $30.000
         </div>
 
         {promoActive && (
@@ -332,6 +512,7 @@ export default function Home() {
 
           <div className="flex items-center border border-[#e5dfd2] bg-[#faf9f6] px-4 transition focus-within:border-[#b89b65]">
             <span className="text-xl text-[#a48750]">⌕</span>
+
             <input
               id="search"
               type="search"
@@ -358,8 +539,11 @@ export default function Home() {
               className="h-11 border border-[#e5dfd2] bg-[#faf9f6] px-3 text-sm outline-none focus:border-[#b89b65]"
             >
               <option value="all">Todas las marcas</option>
+
               {brands.map((item) => (
-                <option key={item} value={item}>{item}</option>
+                <option key={item} value={item}>
+                  {item}
+                </option>
               ))}
             </select>
 
@@ -369,8 +553,11 @@ export default function Home() {
               className="h-11 border border-[#e5dfd2] bg-[#faf9f6] px-3 text-sm outline-none focus:border-[#b89b65]"
             >
               <option value="all">Todos los géneros</option>
+
               {genders.map((item) => (
-                <option key={item} value={item}>{item}</option>
+                <option key={item} value={item}>
+                  {item}
+                </option>
               ))}
             </select>
 
@@ -380,16 +567,16 @@ export default function Home() {
               className="h-11 border border-[#e5dfd2] bg-[#faf9f6] px-3 text-sm outline-none focus:border-[#b89b65]"
             >
               <option value="all">Todas las temporadas</option>
-              {["Primavera", "Verano", "Otoño", "Invierno", "Noche"].map(
-                (item) => (
-                  <option key={item} value={item}>{item}</option>
-                )
-              )}
+              <option value="primavera">Primavera</option>
+              <option value="verano">Verano</option>
+              <option value="otoño">Otoño</option>
+              <option value="invierno">Invierno</option>
             </select>
           </div>
 
           <div className="mt-4 flex items-center justify-between text-xs text-gray-500">
             <span>{filteredProducts.length} productos encontrados</span>
+
             <button
               onClick={() => {
                 setQuery("");
@@ -408,11 +595,6 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filteredProducts.map((product) => {
             const quantity = cart[product.id] ?? 0;
-            const hasOffer = Boolean(product.offerPrice3Units);
-            const displayPrice =
-              promoActive && hasOffer
-                ? product.offerPrice3Units!
-                : product.price;
 
             return (
               <article
@@ -436,11 +618,9 @@ export default function Home() {
                     </div>
                   )}
 
-                  {hasOffer && (
-                    <span className="absolute left-3 top-3 bg-[#b89b65] px-3 py-1 text-[9px] font-bold tracking-widest text-black">
-                      BLACK WEEK
-                    </span>
-                  )}
+                  <span className="absolute left-3 top-3 bg-[#b89b65] px-3 py-1 text-[9px] font-bold tracking-widest text-black">
+                    BLACK WEEK
+                  </span>
 
                   <span className="absolute bottom-3 right-3 bg-white/90 px-3 py-1 text-[10px] text-gray-600">
                     {product.gender}
@@ -458,47 +638,33 @@ export default function Home() {
                   </h3>
 
                   <div className="mt-4 border-t border-[#eee9df] pt-4">
-                    <div className="flex items-center justify-between text-xs text-gray-500">
-                      <span>Precio normal</span>
-                      <span className={promoActive && hasOffer ? "line-through" : "font-semibold text-gray-800"}>
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs text-gray-500">
+                        Precio individual
+                      </span>
+
+                      <span className="text-lg font-bold">
                         {money(product.price)}
                       </span>
                     </div>
 
-                    {hasOffer && (
-                      <div className="mt-3 flex items-center justify-between">
-                        <span className="text-xs font-bold text-[#a48750]">
-                          PRECIO 3+
-                        </span>
-                        <span className="text-lg font-bold text-[#8b6b30]">
-                          {money(product.offerPrice3Units!)}
-                        </span>
-                      </div>
-                    )}
-
-                    {hasOffer && (
-                      <p className="mt-1 text-right text-[10px] text-gray-400">
-                        {promoActive
-                          ? "Promoción aplicada"
-                          : "Precio especial llevando 3+"}
-                      </p>
-                    )}
-
-                    {!hasOffer && (
-                      <p className="mt-3 text-lg font-bold">
-                        {money(displayPrice)}
-                      </p>
-                    )}
+                    <p className="mt-2 text-[10px] leading-5 text-[#987a42]">
+                      Lleva 2 por $30.000. Combina tus fragancias favoritas.
+                    </p>
                   </div>
 
                   <div className="mt-auto pt-5">
                     {quantity > 0 ? (
                       <div className="flex items-center justify-between border border-[#d9c9a7] bg-[#faf8f3] px-3 py-2">
-                        <span className="text-xs font-semibold">Cantidad</span>
+                        <span className="text-xs font-semibold">
+                          Cantidad
+                        </span>
 
                         <div className="flex items-center gap-4">
                           <button
-                            onClick={() => setQuantity(product.id, quantity - 1)}
+                            onClick={() =>
+                              setQuantity(product.id, quantity - 1)
+                            }
                             className="text-lg text-[#987a42] hover:text-black"
                           >
                             −
@@ -536,7 +702,7 @@ export default function Home() {
 
                     {details.includes(product.id) && (
                       <p className="mt-3 border-t border-[#eee9df] pt-3 text-xs leading-6 text-gray-500">
-                        {product.description}
+                        {product.description || "Descripción próximamente."}
                       </p>
                     )}
                   </div>
@@ -548,7 +714,10 @@ export default function Home() {
 
         {filteredProducts.length === 0 && (
           <div className="border border-dashed border-[#d8cbb3] bg-white px-5 py-16 text-center">
-            <p className="font-serif text-2xl">No encontramos productos</p>
+            <p className="font-serif text-2xl">
+              No encontramos productos
+            </p>
+
             <p className="mt-2 text-sm text-gray-500">
               Prueba con otro nombre o modifica los filtros.
             </p>
@@ -561,10 +730,13 @@ export default function Home() {
         <h2 className="font-serif text-2xl tracking-[0.2em] text-[#d6b77b]">
           VS San Antonio
         </h2>
+
         <p className="mt-2 text-[9px] tracking-[0.35em] text-white/50">
           PERFUMERÍA & ACCESORIOS
         </p>
+
         <div className="mx-auto my-6 h-px w-12 bg-[#b89b65]" />
+
         <p className="text-xs text-white/50">
           Encuentra tu esencia. Define tu estilo.
         </p>
@@ -577,6 +749,7 @@ export default function Home() {
         aria-label="Abrir pedido"
       >
         🛍
+
         {totalUnits > 0 && (
           <span className="absolute -right-1 -top-1 flex h-6 min-w-6 items-center justify-center rounded-full bg-[#171613] px-1 text-xs font-bold text-white">
             {totalUnits}
@@ -594,32 +767,41 @@ export default function Home() {
             className="absolute right-0 top-0 flex h-full w-full max-w-md flex-col bg-[#faf9f6] shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* CART HEADER */}
             <div className="flex items-center justify-between border-b border-[#e7dfd0] bg-[#171613] px-6 py-6 text-white">
               <div>
                 <p className="text-[9px] tracking-[0.3em] text-[#d6b77b]">
-                  SA San Antonio
+                  VS SAN ANTONIO
                 </p>
-                <h2 className="mt-1 font-serif text-2xl">Mi pedido</h2>
+
+                <h2 className="mt-1 font-serif text-2xl">
+                  Mi pedido
+                </h2>
               </div>
 
               <button
                 onClick={() => setCartOpen(false)}
                 className="text-xl text-white/70 hover:text-white"
+                aria-label="Cerrar pedido"
               >
                 ✕
               </button>
             </div>
 
+            {/* CART PRODUCTS */}
             <div className="flex-1 overflow-y-auto p-6">
               {lines.length === 0 ? (
                 <div className="py-20 text-center">
                   <span className="text-4xl">🛍</span>
+
                   <p className="mt-4 font-serif text-xl">
                     Tu pedido está vacío
                   </p>
+
                   <p className="mt-2 text-sm text-gray-500">
                     Agrega tus perfumes favoritos para continuar.
                   </p>
+
                   <button
                     onClick={() => setCartOpen(false)}
                     className="mt-6 bg-[#171613] px-6 py-3 text-xs font-bold tracking-widest text-white"
@@ -629,65 +811,68 @@ export default function Home() {
                 </div>
               ) : (
                 <div className="space-y-5">
-                  {lines.map(({ product, qty }) => {
-                    const unitPrice = promoActive
-                      ? product.offerPrice3Units ?? product.price
-                      : product.price;
+                  {lines.map(({ product, qty }) => (
+                    <div
+                      key={product.id}
+                      className="border-b border-[#e8e1d3] pb-5"
+                    >
+                      <div className="flex items-start justify-between gap-3">
+                        <div>
+                          <p className="text-[10px] font-bold tracking-widest text-[#a48750]">
+                            {product.brand}
+                          </p>
 
-                    return (
-                      <div
-                        key={product.id}
-                        className="border-b border-[#e8e1d3] pb-5"
-                      >
-                        <div className="flex items-start justify-between gap-3">
-                          <div>
-                            <p className="text-[10px] font-bold tracking-widest text-[#a48750]">
-                              {product.brand}
-                            </p>
-                            <h3 className="mt-1 text-sm font-semibold">
-                              {product.product || "Producto"}
-                            </h3>
-                            <p className="mt-2 text-sm font-bold">
-                              {money(unitPrice)} c/u
-                            </p>
-                          </div>
+                          <h3 className="mt-1 text-sm font-semibold">
+                            {product.product || "Producto"}
+                          </h3>
+
+                          <p className="mt-2 text-xs text-gray-500">
+                            {money(product.price)} precio individual
+                          </p>
+                        </div>
+
+                        <button
+                          onClick={() => setQuantity(product.id, 0)}
+                          className="text-xs text-red-500 hover:underline"
+                        >
+                          Quitar
+                        </button>
+                      </div>
+
+                      <div className="mt-3 flex items-center justify-between">
+                        <div className="flex items-center gap-4 border border-[#e1d7c5] bg-white px-3 py-1">
+                          <button
+                            onClick={() =>
+                              setQuantity(product.id, qty - 1)
+                            }
+                            className="text-lg text-[#987a42]"
+                          >
+                            −
+                          </button>
+
+                          <span className="text-sm font-bold">
+                            {qty}
+                          </span>
 
                           <button
-                            onClick={() => setQuantity(product.id, 0)}
-                            className="text-xs text-red-500 hover:underline"
+                            onClick={() => addOne(product.id)}
+                            className="text-lg text-[#987a42]"
                           >
-                            Quitar
+                            +
                           </button>
                         </div>
 
-                        <div className="mt-3 flex items-center justify-between">
-                          <div className="flex items-center gap-4 border border-[#e1d7c5] bg-white px-3 py-1">
-                            <button
-                              onClick={() => setQuantity(product.id, qty - 1)}
-                              className="text-lg text-[#987a42]"
-                            >
-                              −
-                            </button>
-                            <span className="text-sm font-bold">{qty}</span>
-                            <button
-                              onClick={() => addOne(product.id)}
-                              className="text-lg text-[#987a42]"
-                            >
-                              +
-                            </button>
-                          </div>
-
-                          <strong className="text-sm">
-                            {money(unitPrice * qty)}
-                          </strong>
-                        </div>
+                        <strong className="text-sm">
+                          {money(product.price * qty)}
+                        </strong>
                       </div>
-                    );
-                  })}
+                    </div>
+                  ))}
                 </div>
               )}
             </div>
 
+            {/* CART TOTALS */}
             {lines.length > 0 && (
               <div className="border-t border-[#e7dfd0] bg-white p-6">
                 <div className="flex justify-between text-sm text-gray-500">
@@ -697,19 +882,30 @@ export default function Home() {
 
                 <div className="mt-3 flex justify-between text-sm">
                   <span>Total normal</span>
-                  <span className={promoActive ? "line-through text-gray-400" : "font-semibold"}>
+
+                  <span
+                    className={
+                      promoActive
+                        ? "line-through text-gray-400"
+                        : "font-semibold"
+                    }
+                  >
                     {money(totalNormal)}
                   </span>
                 </div>
 
                 {promoActive && (
-                  <div className="mt-3 bg-[#f5f0e5] p-3 text-xs text-[#80652f]">
-                    ¡Felicidades! Ahorras {money(savings)} con la promoción de 3+ productos.
+                  <div className="mt-3 bg-[#f5f0e5] p-3 text-xs leading-5 text-[#80652f]">
+                    ¡Felicidades! Ahorras {money(savings)} con nuestra
+                    promoción de 2 o más productos.
                   </div>
                 )}
 
                 <div className="mt-4 flex items-center justify-between border-t border-[#e8e1d3] pt-4">
-                  <span className="font-serif text-lg">Total a pagar</span>
+                  <span className="font-serif text-lg">
+                    Total a pagar
+                  </span>
+
                   <strong className="text-xl text-[#987a42]">
                     {money(totalPromo)}
                   </strong>
